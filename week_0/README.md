@@ -9,7 +9,7 @@ I'm Tianyi Xie, a first-year PhD student in Computer Science (I also got my CS M
 ## Contact me
 
 - Email: tianyixie77@ucla.edu
-- Discussion section: Tuesday& Thursday, 2:00 PM - 2:50 PM, Dodd 154, **in-person**
+- Discussion section: Tuesday& Thursday, 1:00 PM - 1:50 PM, Boelter 9436, **in-person**
 - Office hour: Wednesday, 10:20 AM - 12:20 PM, PIC lab (MS 2000)
 
 ## Important facts

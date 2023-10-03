@@ -1,6 +1,6 @@
-# PIC 20A Discussion 1B 2023 Fall
+# PIC 20A Discussion 1A 2023 Fall
 
-Discussion Section: Tuesday&Thursday, 2:00 PM - 2:50 PM, Dodd Hall 154
+Discussion Section: Tuesday&Thursday, 1:00 PM - 1:50 PM, Boelter 9436
 
 Office Hour: Wednesday, 10:20 AM - 12:20 PM, PIC lab (MS 2000)
 
