@@ -2,18 +2,32 @@ public class Student {
     // Declare/define data members here
     // - public data members: id, name, totalStudentCount
     // - private data members: GPA, totalGPA
+    public int id;
+    public String name;
+    public static int totalStudentCount = 0;
+
+    private double GPA;
+    private static double totalGPA = 0.0;
 
     public Student(int id, String name) {
         // construtor function
+        this.id = id;
+        this.name = name;
+        GPA = 0.0;
+        totalStudentCount++;
     }
 
     public void updateGPA(double GPA){
         // update a student's GPA
+        totalGPA = totalGPA - this.GPA + GPA;
+        this.GPA = GPA;
     }
 
     public static double getAverageGPA(){
         // return average GPA of all students
-        double averageGPA = 0.0;
+        // Both approaches work in this case
+        double averageGPA = Student.totalGPA / Student.totalStudentCount;
+        // double averageGPA = totalGPA / totalStudentCount;
         return averageGPA;
     }
     public static void main(String[] args) {
