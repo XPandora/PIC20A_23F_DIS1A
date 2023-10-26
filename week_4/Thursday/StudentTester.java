@@ -12,7 +12,7 @@ class Student {
 
     // addCourse method
     public void addCourses(String... courses) {
-        this.courses = courses; // this is a shallow copy!!
+        // this.courses = courses; // this is a shallow copy!!
 
         // below is a deep copy
         this.courses = new String[courses.length];
