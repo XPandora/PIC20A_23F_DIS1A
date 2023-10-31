@@ -29,23 +29,68 @@ class Student {
 }
 class Group {
     // fields: array of students
+    public Student[] group;
 
     // methods:
     // varargs constructor
     public Group(Student ... students) {
-        // TODO
+       // group = students; // this is called soft copy
+
+       // this a deep copy
+       // have to create a array, and copy the elements of array one by one
+       group = new Student[students.length];
+       for (int i = 0; i < students.length; i++)
+       {
+            group[i] = students[i];
+       }
     }
 
     // groupByCourse
     public Group groupByCourse(String course){
-        // TODO
-        return null;
+        // first nested loop: counte how many students take this course
+        int counters = 0;
+        for (int i = 0; i < group.length; i++)
+        {
+            Student s = group[i]; // get the i-th student from the array of students
+            // then we need to check if this student take this 'course'
+            for (int j = 0; j < s.courses.length; j++)
+            {
+                // the first one is usually not recommeded
+                // if (s.courses[j] == course) // this compare the address/reference value this two string
+                if (s.courses[j].equals(course)) // this will compare the contect of string object
+                {
+                    counters++;
+                    break;
+                }
+            }
+        }
+
+        // second step: create the array to be returned
+        Student[] newGroup = new Student[counters];
+        counters=0;
+        // the second nested loop is basically the same with the first one
+        // but will just copy the student element to the new array
+        for (int i = 0; i < group.length; i++)
+        {
+            Student s = group[i]; // get the i-th student from the array of students
+            // then we need to check if this student take this 'course'
+            for (int j = 0; j < s.courses.length; j++)
+            {
+                if (s.courses[j].equals(course)) 
+                {
+                    newGroup[counters] = s;
+                    counters++;
+                    break;
+                }
+            }
+        }
+
+        return new Group(newGroup);
     }
     // toString for printing on console
     public String toString()
     {
-        // TODO
-        return "";
+        return java.util.Arrays.toString(group);
     }
 }
 
