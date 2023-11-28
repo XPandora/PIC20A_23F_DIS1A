@@ -68,7 +68,7 @@ public class Main {
 
 A **linked list** is a sequence of nodes that contain two fields: data (an integer value here as an example) and a link to the next node. The last node is linked to a terminator used to signify the end of the list.
 
-![4566d669ac79800f6ac4311160811e09.png](../_resources/4566d669ac79800f6ac4311160811e09.png)
+![4566d669ac79800f6ac4311160811e09.png](./_resources/4566d669ac79800f6ac4311160811e09.png)
 
 Please finish the **add** method of the class **LinkedList**
 
